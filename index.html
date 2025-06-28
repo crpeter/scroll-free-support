@@ -2,66 +2,116 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Scroll Free Support</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Scroll Free – Edit Without Surveillance</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    * {
+      box-sizing: border-box;
       margin: 0;
-      padding: 2rem;
-      background: #f9f9f9;
-      color: #333;
+      padding: 0;
     }
-    .container {
-      max-width: 700px;
-      margin: auto;
-    }
-    h1, h2 {
-      font-size: 1.75rem;
-      margin-top: 2rem;
-      margin-bottom: 1rem;
-    }
-    p {
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0e0e0e;
+      color: #f0f0f0;
       line-height: 1.6;
+    }
+    header {
+      padding: 2rem;
+      text-align: center;
+    }
+    h1 {
+      font-size: 3rem;
+      font-weight: 800;
       margin-bottom: 1rem;
     }
-    a {
-      color: #007aff;
-      text-decoration: none;
+    p.lead {
+      font-size: 1.25rem;
+      color: #bbb;
+      max-width: 700px;
+      margin: 0 auto 2rem;
     }
-    small {
-      display: block;
-      margin-top: 2rem;
-      font-size: 0.85rem;
-      color: #777;
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .feature {
+      background-color: #1a1a1a;
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    .feature h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+    .feature p {
+      color: #999;
+    }
+    .cta {
+      text-align: center;
+      padding: 3rem 2rem;
+    }
+    .cta a {
+      display: inline-block;
+      background-color: #00c896;
+      color: #0e0e0e;
+      padding: 1rem 2rem;
+      font-weight: 600;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .cta a:hover {
+      background-color: #00b084;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #666;
     }
   </style>
 </head>
 <body>
-  <div class="container">
+
+  <header>
     <h1>Scroll Free</h1>
-    <p>Thanks for using Scroll Free. For questions or support, contact us at <a href="mailto:you@example.com">you@example.com</a>.</p>
+    <p class="lead">A creative video editor built for humans — not algorithms. No tracking. No paywalls. Just powerful tools in your hands.</p>
+  </header>
 
-    <h2>Privacy Policy</h2>
-    <p><strong>Last updated: June 27, 2025</strong></p>
-    <p>Scroll Free is designed to protect your attention and your data. We do not collect, store, or sell any personal information. Here's exactly how your privacy is handled:</p>
+  <section class="features">
+    <div class="feature">
+      <h3>Clip & Trim</h3>
+      <p>Cut your footage exactly how you want. Fast and intuitive timeline tools.</p>
+    </div>
+    <div class="feature">
+      <h3>Add Music & Voice</h3>
+      <p>Import audio or record your voice directly — no watermark, no limits.</p>
+    </div>
+    <div class="feature">
+      <h3>Smart Filters</h3>
+      <p>Enhance your video’s style with custom filters. No data mining behind the scenes.</p>
+    </div>
+    <div class="feature">
+      <h3>Private by Design</h3>
+      <p>No accounts, no cloud sync, no creepy recommendations. Your data stays yours.</p>
+    </div>
+  </section>
 
-    <h2>1. No Data Collection</h2>
-    <p>Scroll Free does <strong>not</strong> collect any personal information. We do not track your usage, location, contacts, or behavior.</p>
+  <section class="cta">
+    <h2>Ready to edit without being watched?</h2>
+    <a href="#">Get Scroll Free</a>
+  </section>
 
-    <h2>2. No Third-Party Analytics or Ads</h2>
-    <p>Scroll Free does <strong>not</strong> use analytics tools, advertising SDKs, or third-party trackers of any kind.</p>
+  <footer>
+    &copy; 2025 Scroll Free. Built with privacy and purpose.
+  </footer>
 
-    <h2>3. On-Device Processing</h2>
-    <p>All video editing and content creation happens <strong>locally on your device</strong>. Nothing is uploaded or analyzed externally.</p>
-
-    <h2>4. No Login or Accounts</h2>
-    <p>You do not need to sign up or log in to use Scroll Free. We don’t manage any user accounts or passwords.</p>
-
-    <h2>5. Your Data Stays Yours</h2>
-    <p>Videos you create with Scroll Free remain on your device unless you choose to export or share them.</p>
-
-    <small>© 2025 Scroll Free</small>
-  </div>
 </body>
 </html>
