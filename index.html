@@ -6,32 +6,51 @@
   <title>Scroll Free – Edit Without Surveillance</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --bg: #0a0f1c;
+      --fg: #e8f0ff;
+      --primary: #3b82f6;
+      --primary-dark: #2563eb;
+      --card: #111827;
+      --text-muted: #94a3b8;
+    }
+
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
+
     body {
       font-family: 'Inter', sans-serif;
-      background-color: #0e0e0e;
-      color: #f0f0f0;
+      background-color: var(--bg);
+      color: var(--fg);
       line-height: 1.6;
     }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
     header {
       padding: 2rem;
       text-align: center;
     }
+
     h1 {
       font-size: 3rem;
       font-weight: 800;
       margin-bottom: 1rem;
     }
+
     p.lead {
       font-size: 1.25rem;
-      color: #bbb;
+      color: var(--text-muted);
       max-width: 700px;
       margin: 0 auto 2rem;
     }
+
     .features {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -40,45 +59,83 @@
       max-width: 1000px;
       margin: 0 auto;
     }
+
     .feature {
-      background-color: #1a1a1a;
+      background-color: var(--card);
       border-radius: 12px;
       padding: 1.5rem;
       text-align: center;
     }
+
     .feature h3 {
       font-size: 1.25rem;
       margin-bottom: 0.5rem;
     }
+
     .feature p {
-      color: #999;
+      color: var(--text-muted);
     }
+
     .cta {
       text-align: center;
       padding: 3rem 2rem;
     }
+
     .cta a {
       display: inline-block;
-      background-color: #00c896;
-      color: #0e0e0e;
+      background-color: var(--primary);
+      color: #fff;
       padding: 1rem 2rem;
       font-weight: 600;
       border-radius: 8px;
-      text-decoration: none;
       transition: background 0.3s;
     }
+
     .cta a:hover {
-      background-color: #00b084;
+      background-color: var(--primary-dark);
     }
+
+    .privacy {
+      padding: 3rem 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 0.95rem;
+    }
+
+    .privacy h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .privacy p {
+      margin-bottom: 1rem;
+      color: var(--text-muted);
+    }
+
     footer {
       text-align: center;
       padding: 2rem;
       font-size: 0.9rem;
-      color: #666;
+      color: var(--text-muted);
+    }
+
+    nav {
+      text-align: center;
+      padding: 1rem;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      font-weight: 500;
     }
   </style>
 </head>
 <body>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#privacy">Privacy Policy</a>
+  </nav>
 
   <header>
     <h1>Scroll Free</h1>
@@ -107,6 +164,15 @@
   <section class="cta">
     <h2>Ready to edit without being watched?</h2>
     <a href="#">Get Scroll Free</a>
+  </section>
+
+  <section class="privacy" id="privacy">
+    <h2>Privacy Policy</h2>
+    <p><strong>We don’t want your data. We don’t store your data. We can’t even see your data.</strong></p>
+    <p>Scroll Free is designed to work entirely on your device. We don’t use third-party analytics, cloud syncing, or behavioral tracking of any kind.</p>
+    <p>There are no logins, no account creation, and no identifiers. Your videos never leave your device unless you explicitly share them.</p>
+    <p>We believe in creative freedom without surveillance — and we back it up in our code.</p>
+    <p>Questions? You can reach out at <a href="mailto:hello@scrollfree.app">hello@scrollfree.app</a>.</p>
   </section>
 
   <footer>
